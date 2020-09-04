@@ -9,24 +9,19 @@ import com.mybank.customer.model.CustomerDetails;
 import com.mybank.customer.model.Error;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.*;
+import org.springframework.validation.BeanPropertyBindingResult;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.instanceOf;
 import static org.junit.Assert.assertEquals;
 
-@RunWith(MockitoJUnitRunner.class)
 public class CustomerErrorHandlerTest {
 
-    @InjectMocks
-    CustomerErrorHandler customerErrorHandler;
+    CustomerErrorHandler customerErrorHandler = new CustomerErrorHandler();
 
     ObjectMapper objectMapper;
 
