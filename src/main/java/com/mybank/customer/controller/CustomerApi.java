@@ -25,8 +25,9 @@ public interface CustomerApi {
             @ApiResponse(code=400, message = "Invalid Input"),
             @ApiResponse(code=400, message = "Invalid input - UserName is mandatory"),
             @ApiResponse(code=400, message = "Invalid input - Password is mandatory"),
+            @ApiResponse(code=409, message = "Invalid username/password"),
+            @ApiResponse(code=409, message = "Customer is not activated"),
             @ApiResponse(code=401, message = "Unauthorized"),
-            @ApiResponse(code=401, message = "Inactive Customer"),
             @ApiResponse(code=500, message = "Internal Server Error"),
             @ApiResponse(code=200, message = "Success")
     })

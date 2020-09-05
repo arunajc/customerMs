@@ -126,6 +126,7 @@ public class CustomerServiceImpl implements CustomerService{
 			throw new GeneralException(GeneralError.UNEXPECTED_ERROR);
 		}
 
+		customerDetails.setEnabled(1);
 		return customerDetails;
 	}
 }
