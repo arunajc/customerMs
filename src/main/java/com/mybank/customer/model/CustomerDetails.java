@@ -154,7 +154,6 @@ public class CustomerDetails {
     public String toString() {
         return "CustomerDetails{" +
                 "userName='" + userName + '\'' +
-                ", password='" + password.replaceAll(".", "*") + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", emailId='" + emailId + '\'' +

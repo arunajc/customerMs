@@ -165,7 +165,6 @@ public class CustomerDetailsEntity {
     public String toString() {
         return "CustomerDetailsEntity{" +
                 "userName='" + userName + '\'' +
-                ", password='" + password.replaceAll(".", "*") + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", emailId='" + emailId + '\'' +
